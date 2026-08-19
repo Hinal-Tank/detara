@@ -43,8 +43,13 @@ export default function HeroSection({ section }: HeroSectionProps) {
 
   return (
     <section
-      className="relative w-screen min-h-[100svh] overflow-hidden"
-      style={{ height: '100svh', minHeight: '100svh', maxWidth: '100vw', backgroundColor: '#5B4636' }}
+      className="relative w-full min-h-[100svh] overflow-hidden"
+      style={{
+        height: '100svh',
+        minHeight: '100svh',
+        maxWidth: '100%',
+        backgroundColor: '#5B4636'
+      }}
     >
       {/* Background */}
       <div className="absolute inset-0">

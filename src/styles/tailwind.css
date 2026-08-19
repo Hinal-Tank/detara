@@ -5,17 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-  --bg: #F6F1E8;
-  --bg-warm: #5B4636;
+  --bg: #F8F5EF;
+  --bg-warm: #EEE8DE;
   --bg-white: #FFFFFF;
-  --text: #211B18;
-  --text-muted: #5B4636;
-  --text-light: #766554;
-  --accent: #C6A15B;
-  --accent-dark: #9D7840;
-  --accent-light: #E7D3A6;
-  --border: rgba(23, 24, 23, 0.08);
-  --border-accent: rgba(212, 176, 122, 0.25);
+  --text: #171512;
+  --text-muted: #625C54;
+  --text-light: #81796F;
+  --accent: #B79252;
+  --accent-dark: #8D6A34;
+  --accent-light: #E6D5B4;
+  --border: rgba(23, 21, 18, 0.10);
+  --border-accent: rgba(183, 146, 82, 0.32);
 }
 
 * {
@@ -856,4 +856,87 @@ body {
 .hero-scroll-line {
   animation: heroScrollLine 2s ease-in-out infinite;
   will-change: transform;
+}
+
+/* ==========================================================
+   DETARA LUXURY VISUAL SYSTEM
+   Mobile-first, restrained, editorial, and jewellery-focused.
+   ========================================================== */
+
+::selection {
+  background: rgba(183, 146, 82, 0.22);
+  color: var(--text);
+}
+
+a, button, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Fine, consistent luxury borders instead of heavy UI chrome. */
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+/* Refined form controls: neutral, square-edged, minimal and accessible. */
+input:not([type='checkbox']):not([type='radio']),
+select,
+textarea {
+  border-radius: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Premium product photography treatment — never cartoonish or over-filtered. */
+.product-card img,
+.img-hover-zoom img {
+  image-rendering: auto;
+  backface-visibility: hidden;
+}
+
+/* Keep motion subtle and respect accessibility preferences. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Mobile-first spacing and touch targets. */
+@media (max-width: 639px) {
+  .heading-display { line-height: 0.98; }
+  .label-caps { letter-spacing: 0.28em; }
+  .btn-primary,
+  .btn-outline,
+  .btn-gold {
+    min-height: 48px;
+    padding: 15px 24px;
+  }
+
+  /* Hover-only zoom feels jumpy on touch devices; keep photography stable. */
+  .img-hover-zoom:hover img,
+  .product-card:hover {
+    transform: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-card:hover {
+    transform: translateY(-3px);
+  }
 }

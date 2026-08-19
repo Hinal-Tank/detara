@@ -29,7 +29,7 @@ interface BrandLogoProps {
  * the wordmark to fade/wash-out on every scroll change.
  */
 export default function BrandLogo({
-  heightClass = 'h-[64px] sm:h-[72px] md:h-[80px] lg:h-[108px] xl:h-[120px]',
+  heightClass = 'h-[60px] sm:h-[68px] md:h-[78px] lg:h-[108px] xl:h-[120px]',,
   asLink = true,
   ariaLabel = `${BRAND_NAME} Home`,
   priority = false,

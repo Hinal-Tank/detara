@@ -134,7 +134,8 @@ export default function Header() {
             <div className="flex-1 flex justify-center items-center md:flex-none md:justify-center">
               <BrandLogo
                 priority
-               />
+                heightClass="h-[42px] sm:h-[48px] md:h-[56px] lg:h-[108px] xl:h-[120px]"
+              />
             </div>
 
             {/* RIGHT — icons + right nav */}
@@ -280,7 +281,7 @@ export default function Header() {
         style={{ background: 'var(--bg)', maxWidth: '100vw', overflowX: 'hidden' }}
       >
         {/* Menu header — one close control, centered DETARA logo */}
-        <div className="relative grid grid-cols-[48px_1fr_48px] items-center px-3 sm:px-5 h-[60px] sm:h-[68px] md:h-[80px] border-b border-[rgba(28,25,23,0.06)] flex-shrink-0"
+        <div className="relative grid grid-cols-[48px_1fr_48px] items-center px-3 sm:px-5 h-[68px] sm:h-[74px] md:h-[82px] border-b border-[rgba(28,25,23,0.06)] flex-shrink-0"
           style={{ backgroundColor: '#F6F1E8' }}>
           <button
             className="flex items-center justify-center w-12 h-12 text-foreground flex-shrink-0 tap-transparent"
@@ -293,7 +294,7 @@ export default function Header() {
             </svg>
           </button>
           <div className="flex items-center justify-center" onClick={() => setMenuOpen(false)}>
-            <BrandLogo asLink={false} />
+            <BrandLogo asLink={false} heightClass="h-[40px] sm:h-[44px] md:h-[52px]"  />
           </div>
           <button
             onClick={() => setDrawerOpen(true)}

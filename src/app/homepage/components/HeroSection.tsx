@@ -63,7 +63,7 @@ export default function HeroSection({ section }: HeroSectionProps) {
               playsInline
               poster={videoPoster}
               onLoadedData={() => setVideoLoaded(true)}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${videoLoaded ? 'opacity-60' : 'opacity-0'}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${videoLoaded ? 'opacity-80' : 'opacity-0'}`}
               style={{ objectPosition: 'center' }}
             >
               <source src={videoUrl} type="video/mp4" />
@@ -77,7 +77,7 @@ export default function HeroSection({ section }: HeroSectionProps) {
                   priority
                   fetchPriority="high"
                   sizes="100vw"
-                  className="object-cover opacity-60"
+                  className="object-cover opacity-80"
                   style={{ objectPosition: 'center center' }}
                   quality={85}
                 />
@@ -118,8 +118,8 @@ export default function HeroSection({ section }: HeroSectionProps) {
             />
           )
         )}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#5B4636]/40 via-transparent to-[#5B4636]/75" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#5B4636]/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#5B4636]/25 via-transparent to-[#5B4636]/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#5B4636]/20 via-transparent to-transparent" />
       </div>
 
       {/* Content */}

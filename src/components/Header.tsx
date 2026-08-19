@@ -134,7 +134,6 @@ export default function Header() {
             <div className="flex-1 flex justify-center items-center md:flex-none md:justify-center">
               <BrandLogo
                 priority
-                heightClass="h-[42px] sm:h-[48px] md:h-[56px] lg:h-[108px] xl:h-[120px]"
               />
             </div>
 
@@ -294,7 +293,7 @@ export default function Header() {
             </svg>
           </button>
           <div className="flex items-center justify-center" onClick={() => setMenuOpen(false)}>
-            <BrandLogo asLink={false} heightClass="h-[40px] sm:h-[44px] md:h-[52px]"  />
+            <BrandLogo />
           </div>
           <button
             onClick={() => setDrawerOpen(true)}

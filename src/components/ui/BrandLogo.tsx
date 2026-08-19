@@ -43,7 +43,7 @@ export default function BrandLogo({
       height={LOGO_NATIVE_HEIGHT}
       priority={priority}
       sizes="(max-width: 640px) 240px, (max-width: 1024px) 320px, 420px"
-      className={`object-contain w-[120px] sm:w-[140px] md:w-[160px] lg:w-auto select-none ${heightClass} ${className}`}
+      className={`object-contain w-auto select-none scale-[1.35] sm:scale-[1.3] md:scale-[1.2] lg:scale-100 ${heightClass} ${className}`}
       draggable={false}
     />
   );

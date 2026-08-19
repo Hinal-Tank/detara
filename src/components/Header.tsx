@@ -134,8 +134,7 @@ export default function Header() {
             <div className="flex-1 flex justify-center items-center md:flex-none md:justify-center">
               <BrandLogo
                 priority
-                heightClass="h-[64px] sm:h-[72px] md:h-[76px] lg:h-[108px] xl:h-[120px]"
-              />
+               />
             </div>
 
             {/* RIGHT — icons + right nav */}
@@ -294,7 +293,7 @@ export default function Header() {
             </svg>
           </button>
           <div className="flex items-center justify-center" onClick={() => setMenuOpen(false)}>
-            <BrandLogo asLink={false} heightClass="h-[56px] md:h-[60px] md:h-[64px]" />
+            <BrandLogo asLink={false} />
           </div>
           <button
             onClick={() => setDrawerOpen(true)}
